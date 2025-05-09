@@ -1,0 +1,233 @@
+.booking-form {
+    max-width: 340px;
+    height: 620px;
+    margin: 190px auto;
+    padding: 55px 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: rgba(220, 209, 198, 0.7);
+    border-radius: 77px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.back-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.booking-form h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input, .select-box {
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: white;
+}
+
+.form-group select {
+    appearance: none;
+    background-color: #fff;
+}
+
+.submit-button {
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: solid;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-family: 'Optima', sans-serif;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.submit-button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Адаптив для планшетов (768px - 1439px) */
+@media (min-width: 768px) and (max-width: 1439px) {
+    .booking-form {
+        max-width: 210px;
+        height: 385px;
+        margin: 66px auto;
+        padding: 30px 80px;
+        border-radius: 40px;
+    }
+    form{
+        height: 293px;
+    }
+    .booking-form h2 {
+        font-size: 28px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+    .form-group{
+        margin-bottom: 5px;
+    }
+    .form-group select,
+    .form-group input, .select-box {
+        padding: 10px 10px;
+        font-size: 12px;
+        border-radius: 10px;
+    
+    }
+
+    .submit-button {
+        padding: 8px 6px;
+        font-size: 16px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .form-note {
+        font-size: 12px;
+    }
+
+    .back-button {
+        top: 20px;
+        right: 20px;
+    }
+
+    .back-button img {
+        width: 20px;
+    }
+}
+
+/* Адаптив для мобильных устройств (max-width: 767px) */
+@media (max-width: 767px) {
+    .booking-form {
+        max-width: 250px;
+        height: 400px;
+        margin: 55px auto;
+        padding: 30px 20px;
+        border-radius: 40px;
+    }
+    form{
+        height: 293px;
+    }
+    .booking-form h2 {
+        font-size: 28px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+    .form-group{
+        margin-bottom: 5px;
+    }
+    .form-group select,
+    .form-group input, .select-box {
+        padding: 10px 10px;
+        font-size: 12px;
+        border-radius: 10px;
+
+    }
+
+    .submit-button {
+        padding: 8px 6px;
+        font-size: 16px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .form-note {
+        font-size: 12px;
+    }
+
+    .back-button {
+        top: 20px;
+        right: 20px;
+    }
+
+    .back-button img {
+        width: 20px;
+    }
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .options-container {
+    display: none;
+    position: absolute;
+    max-height: 220px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    border-top: none;
+    background-color: #fff;
+    padding: 8px;
+  }
+  
+  .options-container.show {
+    display: block;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .option input {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .total {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  

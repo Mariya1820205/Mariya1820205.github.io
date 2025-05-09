@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-weight: 200;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+:root {
+    --accent-color: #25671D;
+    --heading-color: #B9B0A8;
+    --block-color: #DCD1C6;
+    --additional-color: #FFF8EB;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url("./ofont.ru_Optima.ttf") format("truetype");
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 calc(25% - 10px);
+    max-width: calc(25% - 10px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    transition: bottom 0.3s ease;
+    border-radius: 0 0 60px 60px;
+}
+
+.gallery-item:hover .overlay {
+    bottom: 0;
+}
+
+.gallery-item:hover img {
+    opacity: 0.8;
+}
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 110px;
+    }
+
+    .rounded-block-top {
+        height: 1538px;
+    }
+
+    .footer-block {
+        top: 1960px;
+    }
+
+    .rounded-block-top {
+        height: 1783px;
+    }
+
+    .footer-block {
+        top: 2700px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(25% - 10px);
+        max-width: calc(25% - 10px);
+    }
+
+    .gallery-item .overlay {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .overlay p {
+        font-size: 15px;
+    }
+
+    .rounded-block-top {
+        height: 935px;
+    }
+
+    .footer-block {
+        top: 1343px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .gallery-item .overlay {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .overlay p {
+        font-size: 12px;
+    }
+
+    .rounded-block-top {
+        height: 1458px;
+    }
+
+    .footer-block {
+        top: 1890px;
+    }
+}

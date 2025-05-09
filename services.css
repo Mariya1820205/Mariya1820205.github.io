@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-weight: 200;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+:root {
+    --accent-color: #25671D;
+    --heading-color: #B9B0A8;
+    --block-color: #DCD1C6;
+    --additional-color: #FFF8EB;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url("./ofont.ru_Optima.ttf") format("truetype");
+}
+
+.background-title-block {
+    background-image: url(img/footer.png);
+}
+.footer-block {
+    background-image: url(img/tempImageG6lYac.png);
+}
+.block-price-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.price-block {
+    background-color: #DCD1C6;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.price-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.price-header h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #333;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn.active {
+    transform: rotate(45deg);
+}
+
+
+.price-content {
+    background-color: rgb(251 251 251 / 85%);
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.price-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-content li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+.price-content li:last-child {
+    border-bottom: none;
+}
+
+.price-content li span {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* #------------------------------------------------------------------------DESKTOP(1440)------------------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 110px;
+    }
+
+    .block-price-list {
+        margin-top: 93px;
+    }
+
+    .price-list {
+        width: 1200px;
+        margin-top: 53px;
+    }
+
+    .price-block {
+        border-radius: 20px;
+    }
+
+    .price-header h3 {
+        font-size: 32px;
+    }
+
+    .toggle-btn {
+        font-size: 50px;
+    }
+
+    .price-content li {
+        font-size: 20px;
+    }
+
+    .rounded-block-top {
+        height: 2476px;
+    }
+
+    .footer-block {
+        top: 3395px;
+    }
+}
+
+/* #-----------------------------------------------------------------------TABET(768)---------------------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1439px) {
+    .block-price-list {
+        margin-top: 70px;
+    }
+
+    .price-list {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .price-block {
+        border-radius: 15px;
+    }
+
+    .price-header h3 {
+        font-size: 28px;
+    }
+
+    .toggle-btn {
+        font-size: 40px;
+    }
+
+    .price-content li {
+        font-size: 18px;
+    }
+
+    .rounded-block-top {
+        height: 1538px;
+    }
+
+    .footer-block {
+        top: 1960px;
+    }
+}
+
+/* #------------------------------------------------------------------------MOBILE(320)--------------------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .block-price-list {
+        margin-top: 30px;
+    }
+
+    .price-list {
+        width: 100%;
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+
+    .price-block {
+        border-radius: 10px;
+    }
+
+    .price-header {
+        padding: 10px 15px;
+    }
+
+    .price-header h3 {
+        font-size: 14px;
+    }
+
+    .toggle-btn {
+        font-size: 30px;
+    }
+
+    .price-content {
+        padding: 0 15px;
+    }
+
+    .price-content li {
+        font-size: 11px;
+        padding: 8px 0;
+    }
+
+    .rounded-block-top {
+        height: 791px;
+    }
+
+    .footer-block {
+        top: 1230px;
+    }
+}

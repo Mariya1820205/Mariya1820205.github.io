@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Etheria beauty</title>
+</head>
+
+<body>
+    <div class="background-title-block">
+        <div class="booking-form">
+            <a href="index.html" class="back-button"><img src="img/Vector.svg" alt=""></a>
+
+            <h2>ЗАПИСЬ</h2>
+
+            <form>
+                <div class="form-group">
+                    <label>Выберите услуги:</label>
+                    <div class="custom-select">
+                      <div class="select-box" onclick="toggleDropdown()">
+                        <span class="placeholder">Нажмите для выбора</span>
+                      </div>
+                      <div class="options-container">
+                        <!-- Чекбоксы будут появлятся здесь -->
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" required>
+                </div>
+
+                <div class="form-group">
+                    <p>Общая сумма: <span id="total">0</span> ₽</p>
+                  </div>
+
+                <button type="submit" class="submit-button">ОСТАВИТЬ ЗАЯВКУ</button>
+            </form>
+
+            <p class="form-note">*Оставьте заявку и наш менеджер свяжется с Вами.</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
