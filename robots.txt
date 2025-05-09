@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://Mariya1820205.github.io/sitemap.xml
